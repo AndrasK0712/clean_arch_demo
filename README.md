@@ -152,21 +152,7 @@ sh tool/check_architecture.sh            # kiểm tra nhanh bằng grep
 
 > Lưu ý thực dụng: UseCase dùng annotation `@lazySingleton` của `injectable` (một package annotation thuần Dart). Nếu muốn Domain hoàn toàn không biết `injectable`, có thể đăng ký UseCase trong một `@module` ở `core/di`.
 
-## 6. Quy ước làm việc nhóm (Git)
-
-- Nhánh: `main` (ổn định) ← `feature/<tên>`; merge bằng Pull Request.
-- Commit theo [Conventional Commits](https://www.conventionalcommits.org/): `feat(domain): add GetPosts usecase`, `test(domain): add GetPosts unit tests`, `docs: update README`.
-- Mỗi thành viên commit bằng đúng tài khoản/email của mình (`git config user.name`, `git config user.email`).
-
-### Phân công
-
-| Thành viên | MSSV | Nhiệm vụ | Phần code chính |
-|---|---|---|---|
-| … | … | Khởi tạo dự án, DI, README | `core/`, `main.dart`, `app.dart` |
-| … | … | Domain + Data + unit test | `features/post/domain`, `features/post/data`, `test/` |
-| … | … | Presentation + slide | `features/post/presentation`, slide |
-
-## 7. Xử lý sự cố
+## 6. Xử lý sự cố
 
 | Triệu chứng | Cách xử lý |
 |---|---|
