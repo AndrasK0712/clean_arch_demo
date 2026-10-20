@@ -90,7 +90,7 @@ tool/check_architecture.sh                                    # kiểm tra nhanh
 
 ```bash
 # 1. Clone
-git clone <URL_REPO_CUA_NHOM>
+git clone https://github.com/AndrasK0712/clean_arch_demo
 cd clean_arch_demo
 
 # 2. Tạo thư mục nền tảng (android/ ios/ ...) nếu repo chưa có
